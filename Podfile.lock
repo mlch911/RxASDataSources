@@ -1,46 +1,74 @@
 PODS:
-  - Differentiator (3.0.2)
-  - PINCache (3.0.1-beta.5):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
-    - PINCache/Core (= 3.0.1-beta.5)
-  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+  - Differentiator (5.0.0)
+  - PINCache (3.0.4):
+    - PINCache/Arc-exception-safe (= 3.0.4)
+    - PINCache/Core (= 3.0.4)
+  - PINCache/Arc-exception-safe (3.0.4):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.5):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.12):
+  - PINCache/Core (3.0.4):
+    - PINOperation (~> 1.2.3)
+  - PINOperation (1.2.3)
+  - PINRemoteImage/Core (3.0.3):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.12):
+  - PINRemoteImage/iOS (3.0.3):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.12):
-    - PINCache (= 3.0.1-beta.5)
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
-  - RxCocoa (4.0.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
-  - Texture (2.5.1):
-    - Texture/PINRemoteImage (= 2.5.1)
-  - Texture/Core (2.5.1)
-  - Texture/PINRemoteImage (2.5.1):
-    - PINRemoteImage/iOS (= 3.0.0-beta.12)
+  - RxCocoa (6.9.0):
+    - RxRelay (= 6.9.0)
+    - RxSwift (= 6.9.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+  - Texture (3.1.0):
+    - Texture/AssetsLibrary (= 3.1.0)
+    - Texture/Core (= 3.1.0)
+    - Texture/MapKit (= 3.1.0)
+    - Texture/Photos (= 3.1.0)
+    - Texture/PINRemoteImage (= 3.1.0)
+    - Texture/Video (= 3.1.0)
+  - Texture/AssetsLibrary (3.1.0):
+    - Texture/Core
+  - Texture/Core (3.1.0)
+  - Texture/MapKit (3.1.0):
+    - Texture/Core
+  - Texture/Photos (3.1.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.1.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
     - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.1.0):
     - Texture/Core
 
 DEPENDENCIES:
-  - Differentiator
-  - RxCocoa
-  - RxSwift
-  - Texture
+  - Differentiator (~> 5.0)
+  - RxCocoa (~> 6.0)
+  - RxSwift (~> 6.0)
+  - Texture (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Texture
 
 SPEC CHECKSUMS:
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
-  Texture: c3f06e344aa091667b7a56002e525cde674d021a
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  PINCache: d9a87a0ff397acffe9e2f0db972ac14680441158
+  PINOperation: fb563bcc9c32c26d6c78aaff967d405aa2ee74a7
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
 
-PODFILE CHECKSUM: df58f9cead49c76984203f4eab4ded96071c8990
+PODFILE CHECKSUM: dc5305793a55e4c9fa3f639b5a699c7c567de9f5
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.15.2

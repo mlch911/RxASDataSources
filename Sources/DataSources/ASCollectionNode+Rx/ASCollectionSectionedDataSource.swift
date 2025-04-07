@@ -239,7 +239,8 @@ open class ASCollectionSectionedDataSource<S: SectionModelType>: NSObject, ASCol
         return cell
     }
 
-    open func collectionNode(_ collectionNode: ASCollectionNode, canMoveItemAt indexPath: IndexPath) -> Bool {
+    open func collectionNode(_ collectionNode: ASCollectionNode, canMoveItemWith node: ASCellNode) -> Bool {
+        guard let indexPath = node.indexPath else { return false }
         return canMoveItemAtIndexPath(self, indexPath)
     }
     
